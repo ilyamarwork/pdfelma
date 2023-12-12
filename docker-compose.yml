@@ -1,0 +1,10 @@
+version: '3'
+name: e365microservices
+services:
+    e365converttopdf:
+        container_name: e365converttopdf
+        image: ilyamarwork/pdfelma:1.0
+        ports:
+            - 5000:5000
+        volumes:
+            - ./app:/app
